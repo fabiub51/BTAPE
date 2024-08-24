@@ -1,6 +1,4 @@
 function C01_specification_runs(pre_data_dir, runs, subs, delay_sim_1, delay_alt_1, delay_sim_2, delay_alt_2, delay_sim_3, delay_alt_3)
-
-output_dir = fullfile('C:\Users\berne\Documents\Master FU\2. Semester\NMDA practical\Bistable_perception\Derivatives\1st_level');
 %% Create data 
 
 % For participant 1
