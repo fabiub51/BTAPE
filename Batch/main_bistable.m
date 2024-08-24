@@ -96,12 +96,11 @@ delay_alt_2 = 2;
 delay_sim_3 = 3; 
 delay_alt_3 = 2; 
 
-C01_specification_runs(pre_data_dir, runs, subs, delay_sim, delay_alt, delay_sim_2, delay_alt_2, delay_sim_3, delay_alt_3);
+output_dir = fullfile('C:\Users\berne\Documents\Master FU\2. Semester\NMDA practical\Bistable_perception\Derivatives\1st_level');
+
+C01_specification_runs(output_dir, pre_data_dir, runs, subs, delay_sim, delay_alt, delay_sim_2, delay_alt_2, delay_sim_3, delay_alt_3);
     
 
 %% Estimation
-large_GLM_dir = 'C:\Users\berne\Documents\Master FU\2. Semester\NMDA practical\Bistable_perception\Derivatives\1st_level';
-
-output_dir = large_GLM_dir;
 C02_estimation(output_dir);
     
