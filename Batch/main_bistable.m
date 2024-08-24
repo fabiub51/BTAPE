@@ -12,7 +12,7 @@ addpath('C:\Users\berne\Documents\MATLAB\spm12'); %This ensures your SPM12 is lo
 v = [1,1,1,1,1]; 
 
 %all participants
-subs = [1,3]; 
+subs = [1,3,4]; 
 runs = [1,2,3,4,5,6,7]; % These are the 6 functional runs + the localizer
 
 %% Establishing directories where the data are
