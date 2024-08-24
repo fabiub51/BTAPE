@@ -2,8 +2,8 @@
 % N.B. the .nii and .json files are converted from the raw dicom files using
 % the dicm2nii tool box 
 % (https://de.mathworks.com/matlabcentral/fileexchange/42997-xiangruili-dicm2nii)
-sub_no = 'sub-001';
-sub_dir = 'C:\Users\berne\Documents\Master FU\2. Semester\NMDA practical\Bistable_perception\Derivatives\sub-001';
+sub_no = 'sub-004';
+sub_dir = 'C:\Users\berne\Documents\Master FU\2. Semester\NMDA practical\Bistable_perception\Derivatives\sub-004';
 
 % create subfolders for func and anat images
 func_dir = fullfile(sub_dir, 'func');
