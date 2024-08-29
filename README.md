@@ -2,7 +2,7 @@ Bistable perception experiment SoSe24 MCNB - Emily, Fabius, Hüma, Lea
 
   %% Univariate analysis
 
-The repository contains a conversion script, the batch script that calls individual functions and script that helped creating 
+The repository contains a conversion script, the batch script which calls individual functions and script that helped creating 
 different contrasts in the folder "main". The raw data were converted to .nii files using the dicm2nii converter. 
 The file structure is explained in the main_bistable script. 
 All the functions are listed in the "functions" folder. 
