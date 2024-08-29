@@ -1,4 +1,5 @@
 %% Decoding 
+% Add important paths
 addpath('C:\Users\berne\Documents\MATLAB\spm12'); 
 addpath('C:\Users\berne\Documents\Master FU\2. Semester\NMDA practical\Bistable_perception');
 addpath('C:\Users\berne\Documents\MATLAB\decoding_toolbox')
@@ -31,6 +32,7 @@ roi_right_S2 = fullfile(mask_dir, 'rSII_TR50_right_CUT_Stim_vs_Null.nii'); % Mas
 rois = {roi_left_S2, roi_right_S2};
 results = {};
 result_figures = {};
+% running the loop for every participant for both ROIs
 for i = 1:length(subs)
     for m = 1:length(rois)
         mask  = rois{m};
