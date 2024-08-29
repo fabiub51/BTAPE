@@ -2,13 +2,13 @@
 addpath('C:\Users\berne\Documents\MATLAB\spm12'); 
 addpath('C:\Users\berne\Documents\Master FU\2. Semester\NMDA practical\Bistable_perception');
 addpath('C:\Users\berne\Documents\MATLAB\decoding_toolbox')
-% do specification and estimation on realigned files 
 
 %% Establishing directories where the data are
 tpm_path = 'C:\Users\berne\Documents\MATLAB\spm12\tpm';
 pre_data_dir = 'C:\Users\berne\Documents\Master FU\2. Semester\NMDA practical\Bistable_perception\Derivatives\sub-00';
 mask_dir = 'C:\Users\berne\Documents\Master FU\2. Semester\NMDA practical\Bistable_perception\Decoding\ROIs';
-%% Specification - first level analysis 
+
+%% Specification - first level analysis using normalized but not smoothed images
 for i = 1:length(subs)
     runs = [1 2 3 4 5 6];
     data_dir = strcat(pre_data_dir,num2str(subs(i)),'/func/run-'); 
@@ -26,7 +26,6 @@ for i = 1:length(subs)
 end 
 
 %% Decoding ROI
-
 roi_left_S2 = fullfile(mask_dir, "rSII_TR50_left_CUT_Stim_vs_Null.nii"); % Mask left S2
 roi_right_S2 = fullfile(mask_dir, 'rSII_TR50_right_CUT_Stim_vs_Null.nii'); % Mask right S2
 rois = {roi_left_S2, roi_right_S2};
